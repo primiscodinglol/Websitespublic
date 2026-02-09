@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Wisbauer - Certified Public Accountant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: #742A33;
+            color: white;
+            padding: 40px 20px 20px 20px;
+            text-align: left;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 600;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 15px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .subheader {
+            background: white;
+            padding: 30px 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .subheader-content {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+        }
+        
+        .subheader-column h3 {
+            color: #742A33;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            font-weight: 600;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #742A33;
+        }
+        
+        .subheader-content p {
+            margin: 8px 0;
+            color: #333;
+            font-size: 0.95em;
+        }
+        
+        .main-content {
+            background: white;
+            margin: 40px auto;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section h2 {
+            color: #1e3a5f;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-bottom: 3px solid #4a90e2;
+            padding-bottom: 10px;
+        }
+        
+        .upload-section {
+            background: #f0f7ff;
+            padding: 40px;
+            border-radius: 8px;
+            border: 2px solid #4a90e2;
+            text-align: center;
+        }
+        
+        .upload-section h2 {
+            border: none;
+            margin-bottom: 15px;
+        }
+        
+        .upload-btn {
+            display: inline-block;
+            background: #4a90e2;
+            color: white;
+            padding: 18px 40px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: background 0.3s ease;
+            box-shadow: 0 4px 10px rgba(74, 144, 226, 0.3);
+        }
+        
+        .upload-btn:hover {
+            background: #357abd;
+            box-shadow: 0 6px 15px rgba(74, 144, 226, 0.4);
+        }
+        
+        .upload-btn-small {
+            display: block;
+            background: #9E3A43;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.95em;
+            font-weight: 600;
+            margin: 15px auto 0;
+            margin-left: calc(50% - 85px);
+            transition: background 0.3s ease;
+            text-align: center;
+            width: fit-content;
+        }
+        
+        .upload-btn-small:hover {
+            background: #8B3540;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+        
+        .info-card {
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            border-left: 4px solid #4a90e2;
+        }
+        
+        .info-card h3 {
+            color: #1e3a5f;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .info-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .contact-info {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+        
+        .contact-info p {
+            margin: 10px 0;
+            font-size: 1.05em;
+        }
+        
+        .contact-info strong {
+            color: #1e3a5f;
+            display: inline-block;
+            width: 80px;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            
+            .main-content {
+                padding: 30px 20px;
+            }
+            
+            .upload-section {
+                padding: 30px 20px;
+            }
+            
+            .subheader-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Michael Wisbauer</h1>
+        <p>Certified Public Accountant</p>
+    </header>
+
+    <div class="subheader">
+        <div class="subheader-content">
+            <div class="subheader-column">
+                <h3>Send Me Tax Stuff</h3>
+                <p>Send me tax documents and financial records using the secure file transfer link below. Please note the password is 6815 and the maximum file size is 2GB.</p>
+                <a href="https://www.sendthisfile.com/f.jsp?id=zBFuErOSRoQlXxBBMLIMxOqo" class="upload-btn-small" target="_blank">
+                    Upload Your Files
+                </a>
+            </div>
+            <div class="subheader-column">
+                <h3>Services</h3>
+                <p>Individual and Business Taxes</p>
+                <p>Advisory and Accounting Support</p>
+                <p>Financial Consulting</p>
+            </div>
+            <div class="subheader-column">
+                <h3>Contact Us</h3>
+                <p>mgwcpa@aol.com</p>
+                <p>(718) 417-0473</p>
+                <p>75-06 Eliot Ave, Suite 4<br>Middle Village, NY 11379</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Michael Wisbauer, CPA. All rights reserved.</p>
+    </footer>
+</body>
+</html>
